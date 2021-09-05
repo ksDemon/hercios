@@ -9,17 +9,27 @@
 }
 
 body{
-    background: #242932;
+  background: #242932;
 }
 
 ul {
   background: #2F343D;
   padding: 20px 0 10px 10px;
-  border-right: 5px solid #92278F;
-  width: 180px;
+  border: 5px solid #92278F;
+  border-left:none;
+  border-radius: 0 20px 20px 0;
+  width: 12vw;
   transition: 0.5s;
   overflow: hidden;
-  margin-left: 12px;
+  overflow-y:scroll;
+  margin-top: 10vh;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+ul::-webkit-scrollbar {
+  display: none;
 }
 
 ul li {
@@ -72,7 +82,7 @@ ul li.active {
 }
 
 ul:hover {
-  width: 300px
+  width: 300px;
 }
 
 #myInput {
@@ -81,7 +91,8 @@ ul:hover {
     font-size: 16px;
     padding: 12px 20px 12px ;
     border: 1px solid #92278F;
-    border-radius: 10px 0px 0px 10px;
+    border-right: none;
+    border-radius: 20px 0px 0px 20px;
     margin-bottom: 20px;
   }
 
@@ -102,33 +113,92 @@ ul:hover {
     justify-content: center;
     align-items: center;
     color: white;
-    border-bottom: 5px solid #92278F;
     margin-left: 12px;
     margin-right: 12px;
 }
 
 #logo{
-    height: 150px;
-    margin-right: 20px;
-    margin-top: 20px;
+    height: 15%;
     margin-bottom: 20px;
+}
+ul p{
+  align-self: center;
+  color:white;
+  margin-bottom:none;
 }
 
 .sidebar {
-    background: #242932;
-    width: 240px;
-    margin:0;
+  position: absolute;
+  top:0;
   }
 
 .window{
-    position: absolute;
-    color: white;
-    justify-content: center;
-    margin-left: 30%;
-    margin-top: 60px;
+  background-color: #2F343D;
+  border-radius: 20px;
+  border: 5px solid #92278F;
+  padding: 4rem;
+  color: white;
+  justify-content: center;
+  margin-top: 10vh;
+  width: 50%;
+  max-height: 80vh;
 }
 
 .content{
     display: flex;
-    margin-right: 12px;
+}
+
+li a {
+  white-space: nowrap;
+}
+
+#imagemain{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#link{
+  color: #92278F;
+}
+
+.grow{
+  transition: 1s ease;
+  }
+  
+.grow:hover{
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+}
+
+.rotate{
+  transition: 2s ease;
+  }
+  
+.rotate:hover{
+-webkit-transform: rotateZ(180deg);
+-ms-transform: rotateZ(360deg);
+transform: rotateZ(360deg);
+transition: 2s ease;
+}
+
+.big-container{
+  width: 88vw;
+  right: 0;
+  position: absolute;
+  display: flex;
+  align-content: center;
+  justify-content:center;
+}
+
+.scroller {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
 }

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -15,45 +15,30 @@
     <link rel="stylesheet" href="./css/fontawesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Modpack Buernardo</title>
+    <title>Hercios Modpack</title>
   </head>
 
   <body>
-    <!-- Header -->
-    <div class="header">
-      <img id="logo" src="assets/logo.svg" alt="Logo">
-      <h1>Modpack Buenardo</h1>
-    </div>
 
+    <!-- Window -->
+    <div class="big-container">
+      <div class="window grow scroller">
+        <h2 id="nombre">Bienvenido</h2>
+        <p><a id="link" href=''> Descargar Modpack</a></p>
+        <img id="imagemain" src="assets/mods/hercios.png" alt="main">
+        <p id="desc">Para instalar el paquete de mods sigue las instrucciones</p>
+      </div>
+    </div>
 
     <!-- Sidebar -->
     <div class="content">
       <div class="sidebar">
         <ul id="myUL">
+          <img id="logo" class="grow rotate" src="assets/logo.svg" alt="Logo">
           <input type="text" id="myInput" onkeyup="searchList()" placeholder="Busca un mod...">
-          <li class="active"><a>Inicio</a></li>
-          <li><a>Demon</a></li>
-          <li><a>Adele</a></li>
-          <li><a>Agnes</a></li>
-          <li><a>Billy</a></li>
-          <li><a>Bob</a></li>
-          <li><a>Hertz</a></li>
-          <li><a>Calvin</a></li>
-          <li><a>Christina</a></li>
-          <li><a>Foba</a></li>
-          <li><a>Cindy</a></li>
         </ul>
       </div>
-
-      <div class="window">
-        <h2>Bienvenido</h2>
-        <p>Para descargar el paquete de mods sigue las instrucciones</p>
-      </div>
-
-  </div>
-
-    
-
+    </div>
 
   </body>
   
@@ -65,7 +50,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <!-- Custom Scripts-->
-    <script src="./js/sidebar.js"></script>
+    <script src="./js/readData.js"></script>
     <script src="./js/searchList.js"></script>
 </body>
 </html>
