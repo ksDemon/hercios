@@ -136,7 +136,7 @@ ul p{
   background-color: #2F343D;
   border-radius: 20px;
   border: 5px solid #92278F;
-  padding: 4rem;
+  padding: 4vw;
   color: white;
   justify-content: center;
   margin-top: 10vh;
@@ -201,4 +201,10 @@ transition: 2s ease;
 
 .scroller::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .window{
+    width: 80%;
+  }
 }
