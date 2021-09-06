@@ -2,7 +2,7 @@ var data = [];
 ul = document.getElementById("myUL");
 
 let request = new XMLHttpRequest();
-request.open("GET", "https://sheets.googleapis.com/v4/spreadsheets/15BknAhKyqL_SrfexLJarCIgs9lL8yWMetuMTtcm-i6w/values/A1:E30?key=AIzaSyCzaVfKdBQ6GhatoH_q2JAoaZGn0d9VAl0");
+request.open("GET", "https://sheets.googleapis.com/v4/spreadsheets/15BknAhKyqL_SrfexLJarCIgs9lL8yWMetuMTtcm-i6w/values/A1:E200?key=AIzaSyCzaVfKdBQ6GhatoH_q2JAoaZGn0d9VAl0");
 request.send();
 request.onload = () => {
     data = JSON.parse(request.response).values;
