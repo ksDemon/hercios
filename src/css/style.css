@@ -154,8 +154,10 @@ li a {
 
 #imagemain{
   width: 100%;
+  height: 300px;
   margin-top: 20px;
   margin-bottom: 20px;
+  object-fit: contain;
 }
 
 #link{
