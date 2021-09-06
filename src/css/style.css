@@ -216,12 +216,40 @@ transition: 2s ease;
   ul{
     width: 20vw;
   }
+
+  .footer{
+    width: 80%;
+  }
 }
 
 .btn{
+  color:white;
   background-color: #92278F;
   border:none;
+  padding: 15px;
+  border-radius: 20px;
 }
 .btn:hover{
+  color: white;
   background-color: #AA2DA8;
+}
+
+#discord{
+  bottom: 0;
+  align-self: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  width: 88vw;
+  right: 0;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  height: 10vh;
+
 }
