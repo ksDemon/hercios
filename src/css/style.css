@@ -161,7 +161,7 @@ li a {
 }
 
 #link{
-  color: #92278F;
+  color: white;
 }
 
 .grow{
@@ -216,4 +216,12 @@ transition: 2s ease;
   ul{
     width: 20vw;
   }
+}
+
+.btn{
+  background-color: #92278F;
+  border:none;
+}
+.btn:hover{
+  background-color: #AA2DA8;
 }
