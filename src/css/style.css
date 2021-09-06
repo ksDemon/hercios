@@ -253,3 +253,10 @@ transition: 2s ease;
   height: 10vh;
 
 }
+
+.inline{
+  color: #92278F;;
+}
+.inline:hover{
+  color: #AA2DA8;
+}
