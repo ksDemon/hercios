@@ -1,6 +1,6 @@
 
 function searchList() {
-  var input, filter, ul, li, a, i, txtValue;
+  var input, filter, ul, li, a, i, txtValue, de;
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
   ul = document.getElementById("myUL");
@@ -8,7 +8,7 @@ function searchList() {
 
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
+    txtValue = a.textContent + data[i][1] || a.innerText + data[1][i];
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {

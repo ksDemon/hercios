@@ -28,7 +28,6 @@ function addData(lista){
         items.forEach(item => item.classList.remove('active'))
         item.classList.add('active')
         ID = item.id
-        console.log(ID)
 
         document.getElementById("nombre").innerHTML = data[ID][0]
         document.getElementById("desc").innerHTML = data[ID][1]

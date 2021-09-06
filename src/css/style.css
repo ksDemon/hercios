@@ -207,4 +207,11 @@ transition: 2s ease;
   .window{
     width: 80%;
   }
+
+  .window:hover{
+    z-index: 2;
+  }
+  ul{
+    width: 20vw;
+  }
 }
