@@ -33,7 +33,7 @@ function addData(lista){
         document.getElementById("desc").innerHTML = data[ID][1]
         document.getElementById("link").setAttribute("href",data[ID][2])
         document.getElementById("link").innerHTML = data[ID][3]
-        document.getElementById("imagemain").src = "./assets/mods/" + data[ID][4];
+        document.getElementById("imagemain").src = data[ID][4];
 
         }) 
     })
