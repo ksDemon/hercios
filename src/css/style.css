@@ -9,11 +9,24 @@
 }
 
 body{
-  background: #242932;
+  background: #130514;
 }
 
-ul {
-  background: #2F343D;
+.background{
+  background-size: cover;
+  background-image: url(./bg.svg);
+  width: 100vw;
+  height: 100vh;
+}
+
+.background2{
+  background-size: cover;
+  background-image: url(./bg2.svg);
+  width: 100vw;
+  height: 100vh;
+}
+
+#myUL {
   padding: 20px 0 10px 10px;
   border: 5px solid #92278F;
   border-left:none;
@@ -28,11 +41,11 @@ ul {
   flex-direction: column;
 }
 
-ul::-webkit-scrollbar {
+#myUL::-webkit-scrollbar {
   display: none;
 }
 
-ul li {
+#myUL li {
   list-style: none;
   padding: 15px;
   padding-right: 0;
@@ -47,12 +60,17 @@ ul li {
 
 }
 
-ul li:hover {
-  transition: 0s;
-  background: #242932;
+#myUL{
+  width: 12vw;
 }
 
-ul li.active:before {
+#myUL li:hover {
+  transition: 0s;
+  background: #130514;
+  opacity: 0.8;
+}
+
+#myUL li.active:before {
   content: '';
   position: absolute;
   top:-20px;
@@ -64,7 +82,7 @@ ul li.active:before {
   box-shadow: 10px 10px 0 #92278F;
 }
 
-ul li.active:after {
+#myUL li.active:after {
   content: '';
   position: absolute;
   bottom:-20px;
@@ -74,19 +92,20 @@ ul li.active:after {
   background: transparent;
   border-radius: 50%;
   box-shadow: 10px -10px 0 #92278F;
-
 }
 
-ul li.active {
+#myUL li.active {
   background: #92278F;
+  opacity: 1 !important;
 }
 
-ul:hover {
+#myUL:hover {
   width: 300px;
 }
 
 #myInput {
-    background-color: #242932;
+    background-color: #130514;
+    opacity: 0.8;
     width: 100%;
     font-size: 16px;
     padding: 12px 20px 12px ;
@@ -121,7 +140,7 @@ ul:hover {
     height: 15%;
     margin-bottom: 20px;
 }
-ul p{
+#myUL p{
   align-self: center;
   color:white;
   margin-bottom:none;
@@ -213,7 +232,7 @@ transition: 2s ease;
     margin-right:0 ;
   }
 
-  ul{
+  #myUL{
     width: 20vw;
     margin-top: 5vh;
   }
